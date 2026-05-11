@@ -3,34 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Publicitaria</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Pasos Pro | Tienda de Sneakers Urbanos</title>
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="portfolio.html">Portafolio</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Pasos<span>Pro</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Colección</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <div class="nav-actions">
+                <button class="btn-search">Buscar</button>
+                <button class="btn-cart">Carrito (0)</button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Bienvenido a Nuestra Página Publicitaria</h1>
-            <p>Mostramos lo mejor de nuestros productos y servicios.</p>
-            <a href="contact.html" class="btn">Contáctanos</a>
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Nueva Colección 2024</span>
+                <h1>Camina hacia el futuro con estilo</h1>
+                <p>Diseño ergonómico y tecnología de punta en cada pisada. Descubre los sneakers que están definiendo la cultura urbana.</p>
+                <div class="hero-btns">
+                    <a href="#productos" class="btn-primary">Ver Catálogo</a>
+                    <a href="#" class="btn-secondary">Saber más</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="zapatilla-hero.png" alt="Sneaker deportivo de última generación">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+                <h3>Envío Flash</h3>
+                <p>Recibe tus zapatos en menos de 24 horas en todo el país.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🛡️</div>
+                <h3>Garantía Premium</h3>
+                <p>90 días de prueba. Si no te convencen, te devolvemos el dinero.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💎</div>
+                <h3>Materiales Pro</h3>
+                <p>Cuero sintético de alta resistencia y suelas de carbono.</p>
+            </div>
+        </section>
+
+        <section id="productos" class="product-gallery">
+            <div class="section-header">
+                <h2>Tendencias de la Semana</h2>
+                <p>Los más buscados por nuestra comunidad</p>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-item">
+                    <div class="product-img">
+                        <img src="sneaker-1.jpg" alt="Modelo Air Nova">
+                        <span class="tag-new">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Air Nova X</h3>
+                        <p class="category">Running / Urban</p>
+                        <span class="price">$120.00</span>
+                        <button class="btn-add">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <div class="product-img">
+                        <img src="sneaker-2.jpg" alt="Modelo Urban Glide">
+                    </div>
+                    <div class="product-info">
+                        <h3>Urban Glide</h3>
+                        <p class="category">Casual</p>
+                        <span class="price">$85.00</span>
+                        <button class="btn-add">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <div class="product-img">
+                        <img src="sneaker-3.jpg" alt="Modelo Dark Knight">
+                        <span class="tag-sale">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dark Knight Ed.</h3>
+                        <p class="category">Limited Edition</p>
+                        <span class="price">$150.00</span>
+                        <button class="btn-add">Añadir</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <h2>¡Únete al club de beneficios!</h2>
+                <p>Suscríbete para recibir ofertas exclusivas y lanzamientos anticipados.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Tu mejor correo electrónico" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Mi Empresa. Todos los derechos reservados.</p>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PasosPro</h3>
+                <p>La tienda líder en calzado tecnológico.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TK</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PasosPro - Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
