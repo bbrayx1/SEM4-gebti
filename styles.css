@@ -1,11 +1,8 @@
-/* =========================================
-   VARIABLES Y CONFIGURACIÓN INICIAL
-========================================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
 :root {
-    --primary-color: #ff4757; /* Rojo/Naranja vibrante */
-    --secondary-color: #2ed573; /* Verde para etiquetas */
+    --primary-color: #ff4757; 
+    --secondary-color: #2ed573; 
     --dark-bg: #1e272e;
     --light-bg: #f1f2f6;
     --white: #ffffff;
