@@ -3,149 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de MADDOX y El NIño uriel</title>
+    <title>KINETIC | Calzado Ultra Moderno</title>
+    <!-- Fuente moderna y geométrica -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Pasos<span>Pro</span></h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Colección</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button class="btn-search">Buscar</button>
-                <button class="btn-cart">Carrito (0)</button>
-            </div>
-        </nav>
+    <!-- Navegación Glassmorphism -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">KINETIC<span>.</span></div>
+            <nav class="nav-links">
+                <a href="#hero">Descubrir</a>
+                <a href="#bento">Tecnología</a>
+                <a href="#comprar" class="btn-nav">Pre-ordenar</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="inicio" class="hero-section">
-            <div class="hero-content">
-                <span class="badge">Nueva Colección 2024</span>
-                <h1>Camina hacia el futuro con estilo</h1>
-                <p>Diseño ergonómico y tecnología de punta en cada pisada. Descubre los sneakers que están definiendo la cultura urbana.</p>
-                <div class="hero-btns">
-                    <a href="#productos" class="btn-primary">Ver Catálogo</a>
-                    <a href="#" class="btn-secondary">Saber más</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content reveal">
+            <div class="badge">Generación 04</div>
+            <h1 class="glitch-text">El futuro en<br>tus pies.</h1>
+            <p>Ingeniería aeroespacial fusionada con diseño urbano. Siente la gravedad cero.</p>
+            <div class="hero-actions">
+                <button class="btn-primary">Comprar Ahora</button>
+                <button class="btn-outline">Ver Video</button>
+            </div>
+        </div>
+        <div class="hero-visual reveal-right">
+            <!-- IMAGEN 1: Guarda una zapatilla en formato PNG sin fondo -->
+            <img src="img/zapatilla-principal-sin-fondo.png" alt="Zapatilla Kinetic" class="floating-shoe">
+            <div class="glow-circle"></div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section (Tendencia Ultra Moderna) -->
+    <section id="bento" class="bento-section">
+        <div class="section-title reveal">
+            <h2>Diseño sin límites</h2>
+        </div>
+        <div class="bento-grid">
+            <div class="bento-box box-1 reveal">
+                <!-- IMAGEN 2: Una foto de la suela o textura del zapato -->
+                <img src="img/detalle-suela.jpg" alt="Suela reactiva">
+                <div class="bento-content">
+                    <h3>Suela Reactiva</h3>
+                    <p>Retorno de energía del 85% en cada pisada.</p>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="zapatilla-hero.png" alt="Sneaker deportivo de última generación">
+            <div class="bento-box box-2 reveal">
+                <!-- IMAGEN 3: Una foto de una persona corriendo o de estilo de vida urbano -->
+                <img src="img/estilo-urbano.jpg" alt="Estilo Urbano">
+                <div class="bento-content">
+                    <h3>Hyper-Ligero</h3>
+                    <p>Solo 180 gramos de peso.</p>
+                </div>
             </div>
-        </section>
-
-        <section class="features">
-            <div class="feature-card">
-                <div class="icon">🚀</div>
-                <h3>Envío Flash</h3>
-                <p>Recibe tus zapatos en menos de 24 horas en todo el país.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">🛡️</div>
-                <h3>Garantía Premium</h3>
-                <p>90 días de prueba. Si no te convencen, te devolvemos el dinero.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">💎</div>
-                <h3>Materiales Pro</h3>
-                <p>Cuero sintético de alta resistencia y suelas de carbono.</p>
-            </div>
-        </section>
-
-        <section id="productos" class="product-gallery">
-            <div class="section-header">
-                <h2>Tendencias de la Semana</h2>
-                <p>Los más buscados por nuestra comunidad</p>
-            </div>
-
-            <div class="product-grid">
-                <article class="product-item">
-                    <div class="product-img">
-                        <img src="sneaker-1.jpg" alt="Modelo Air Nova">
-                        <span class="tag-new">Nuevo</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>Air Nova X</h3>
-                        <p class="category">Running / Urban</p>
-                        <span class="price">$120.00</span>
-                        <button class="btn-add">Añadir</button>
-                    </div>
-                </article>
-
-                <article class="product-item">
-                    <div class="product-img">
-                        <img src="sneaker-2.jpg" alt="Modelo Urban Glide">
-                    </div>
-                    <div class="product-info">
-                        <h3>Urban Glide</h3>
-                        <p class="category">Casual</p>
-                        <span class="price">$85.00</span>
-                        <button class="btn-add">Añadir</button>
-                    </div>
-                </article>
-
-                <article class="product-item">
-                    <div class="product-img">
-                        <img src="sneaker-3.jpg" alt="Modelo Dark Knight">
-                        <span class="tag-sale">-20%</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>Dark Knight Ed.</h3>
-                        <p class="category">Limited Edition</p>
-                        <span class="price">$150.00</span>
-                        <button class="btn-add">Añadir</button>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="newsletter">
-            <div class="newsletter-container">
-                <h2>¡Únete al club de beneficios!</h2>
-                <p>Suscríbete para recibir ofertas exclusivas y lanzamientos anticipados.</p>
-                <form class="subscribe-form">
-                    <input type="email" placeholder="Tu mejor correo electrónico" required>
-                    <button type="submit">Suscribirme</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h3>PasosPro</h3>
-                <p>La tienda líder en calzado tecnológico.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Explorar</h4>
-                <ul>
-                    <li><a href="#">Hombre</a></li>
-                    <li><a href="#">Mujer</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4>Síguenos</h4>
-                <div class="social-icons">
-                    <a href="#">FB</a>
-                    <a href="#">IG</a>
-                    <a href="#">TK</a>
+            <div class="bento-box box-3 reveal">
+                <!-- IMAGEN 4: Una foto enfocada en la tela o cordones -->
+                <img src="img/detalle-malla.jpg" alt="Malla transpirable">
+                <div class="bento-content">
+                    <h3>Aerodinámica</h3>
+                    <p>Malla de titanio líquido transpirable.</p>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 PasosPro - Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
