@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zapatería Nova | Calzado de Primera</title>
-    
-    <!-- Enlace futuro a nuestro CSS -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Iconos gratuitos de FontAwesome para el carrito, usuario, etc. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- =====================================
-         1. CABECERA (HEADER) Y NAVEGACIÓN
-    ====================================== -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="top-bar">
             <p>🔥 Envío gratis en pedidos superiores a S/ 150.00 | Devoluciones en 30 días</p>
         </div>
@@ -29,100 +22,79 @@
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#categorias">Categorías</a></li>
-                <li><a href="#destacados">Destacados</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#destacados">Catálogo</a></li>
+                <li><a href="#testimonios">Reseñas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
 
             <div class="nav-icons">
                 <a href="#" aria-label="Buscar"><i class="fas fa-search"></i></a>
                 <a href="#" aria-label="Mi Cuenta"><i class="fas fa-user"></i></a>
-                <a href="#" aria-label="Carrito"><i class="fas fa-shopping-cart"></i> <span class="cart-count">3</span></a>
+                <a href="#" aria-label="Carrito" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">3</span></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- =====================================
-             2. SECCIÓN PRINCIPAL (HERO)
-        ====================================== -->
         <section id="inicio" class="hero-section">
             <div class="hero-text">
                 <span class="tag">Nueva Colección 2024</span>
                 <h1>Comodidad que te acompaña a todas partes</h1>
                 <p>Descubre nuestra nueva línea de calzado urbano y deportivo. Diseñados para resistir tu ritmo de vida sin perder el estilo.</p>
                 <div class="hero-buttons">
-                    <a href="#destacados" class="btn btn-primary">Comprar Ahora</a>
+                    <a href="#destacados" class="btn btn-primary">Comprar Ahora <i class="fas fa-arrow-right"></i></a>
                     <a href="#categorias" class="btn btn-secondary">Ver Colecciones</a>
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Imagen automática de prueba -->
-                <img src="https://placehold.co/600x400/eeeeee/333333?text=Zapatilla+Principal" alt="Zapatilla de la nueva colección">
+                <img src="images/zapatilla-principal.png" alt="Zapatilla">
             </div>
         </section>
 
-        <!-- =====================================
-             3. BENEFICIOS DE LA TIENDA
-        ====================================== -->
+        <section class="brands-section">
+            <p>Trabajamos con las mejores marcas a nivel mundial:</p>
+            <div class="brands-container">
+                <img src="https://placehold.co/120x50/fff/333?text=NIKE" alt="Nike">
+                <img src="https://placehold.co/120x50/fff/333?text=ADIDAS" alt="Adidas">
+                <img src="https://placehold.co/120x50/fff/333?text=PUMA" alt="Puma">
+                <img src="https://placehold.co/120x50/fff/333?text=REEBOK" alt="Reebok">
+                <img src="https://placehold.co/120x50/fff/333?text=VANS" alt="Vans">
+            </div>
+        </section>
+
         <section class="benefits-section">
-            <div class="benefit-item">
-                <i class="fas fa-truck-fast"></i>
-                <div>
-                    <h3>Envío Rápido</h3>
-                    <p>A todo el país en 24/48h</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <i class="fas fa-shield-halved"></i>
-                <div>
-                    <h3>Compra Segura</h3>
-                    <p>Pagos 100% protegidos</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <i class="fas fa-rotate-left"></i>
-                <div>
-                    <h3>Cambios Fáciles</h3>
-                    <p>Hasta 30 días para cambiar</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <i class="fas fa-headset"></i>
-                <div>
-                    <h3>Soporte 24/7</h3>
-                    <p>Atención al cliente siempre activa</p>
-                </div>
-            </div>
+            <div class="benefit-item"><i class="fas fa-truck-fast"></i><div><h3>Envío Rápido</h3><p>A todo el país en 24/48h</p></div></div>
+            <div class="benefit-item"><i class="fas fa-shield-halved"></i><div><h3>Compra Segura</h3><p>Pagos protegidos</p></div></div>
+            <div class="benefit-item"><i class="fas fa-rotate-left"></i><div><h3>Cambios Fáciles</h3><p>Hasta 30 días</p></div></div>
+            <div class="benefit-item"><i class="fas fa-headset"></i><div><h3>Soporte 24/7</h3><p>Atención siempre activa</p></div></div>
         </section>
 
-        <!-- =====================================
-             4. CATEGORÍAS PRINCIPALES
-        ====================================== -->
         <section id="categorias" class="categories-section">
             <div class="section-title">
                 <h2>Compra por Categoría</h2>
+                <p>Encuentra el par perfecto para cada ocasión</p>
             </div>
             
             <div class="categories-grid">
                 <article class="category-card">
-                    <img src="https://placehold.co/400x500/cccccc/333333?text=Calzado+Hombre" alt="Calzado para Hombre">
+                    <img src="images/cat-hombre.jpg" alt="Calzado Hombre">
                     <div class="category-info">
                         <h3>Hombre</h3>
                         <a href="#" class="btn-link">Ver modelos <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
                 <article class="category-card">
-                    <img src="https://placehold.co/400x500/cccccc/333333?text=Calzado+Mujer" alt="Calzado para Mujer">
+                    <img src="images/cat-mujer.jpg" alt="Calzado Mujer">
                     <div class="category-info">
                         <h3>Mujer</h3>
                         <a href="#" class="btn-link">Ver modelos <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-
                 <article class="category-card">
-                    <img src="https://placehold.co/400x500/cccccc/333333?text=Calzado+Niños" alt="Calzado para Niños">
+                    <img src="images/cat-niños.jpg" alt="Calzado Niños">
                     <div class="category-info">
                         <h3>Niños</h3>
                         <a href="#" class="btn-link">Ver modelos <i class="fas fa-arrow-right"></i></a>
@@ -131,185 +103,130 @@
             </div>
         </section>
 
-        <!-- =====================================
-             5. PRODUCTOS DESTACADOS
-        ====================================== -->
         <section id="destacados" class="products-section">
             <div class="section-title">
-                <h2>Los Más Vendidos</h2>
-                <p>Nuestros clientes aman estos modelos</p>
+                <h2>Nuestro Catálogo</h2>
+                <p>Navega entre nuestros modelos exclusivos</p>
             </div>
 
-            <div class="products-grid">
-                <!-- Producto 1 -->
-                <article class="product-card">
+            <div class="products-tabs">
+                <button class="tab-btn active" data-filter="all">Todos</button>
+                <button class="tab-btn" data-filter="destacados">Destacados</button>
+                <button class="tab-btn" data-filter="nuevos">Nuevos</button>
+                <button class="tab-btn" data-filter="ofertas">Ofertas</button>
+            </div>
+
+            <div class="products-grid" id="product-grid">
+                <article class="product-card" data-category="destacados">
                     <div class="product-image">
-                        <span class="badge sale">-15%</span>
                         <img src="https://placehold.co/300x300/f8f9fa/333333?text=Zapatilla+Urban" alt="Zapatilla Urban">
                     </div>
                     <div class="product-details">
                         <span class="product-brand">Nike</span>
                         <h3 class="product-title">Air Urban Force</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                            <span>(45)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">S/ 250.00</span>
-                            <span class="old-price">S/ 295.00</span>
-                        </div>
-                        <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+                        <div class="product-price"><span class="current-price">S/ 250.00</span></div>
+                        <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Añadir</button>
                     </div>
                 </article>
 
-                <!-- Producto 2 -->
-                <article class="product-card">
+                <article class="product-card" data-category="nuevos">
                     <div class="product-image">
                         <span class="badge new">Nuevo</span>
-                        <img src="https://placehold.co/300x300/f8f9fa/333333?text=Zapato+Casual" alt="Zapato Casual Cuero">
+                        <img src="https://placehold.co/300x300/f8f9fa/333333?text=Zapato+Casual" alt="Zapato Casual">
                     </div>
                     <div class="product-details">
                         <span class="product-brand">Timberland</span>
-                        <h3 class="product-title">Classic Leather Oxford</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            <span>(128)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">S/ 320.00</span>
-                        </div>
-                        <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+                        <h3 class="product-title">Classic Leather</h3>
+                        <div class="product-price"><span class="current-price">S/ 320.00</span></div>
+                        <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Añadir</button>
                     </div>
                 </article>
 
-                <!-- Producto 3 -->
-                <article class="product-card">
+                <article class="product-card" data-category="ofertas">
                     <div class="product-image">
-                        <img src="https://placehold.co/300x300/f8f9fa/333333?text=Botas+Trekking" alt="Botas de Trekking">
-                    </div>
-                    <div class="product-details">
-                        <span class="product-brand">Caterpillar</span>
-                        <h3 class="product-title">Explorer Mountain Boots</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                            <span>(32)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">S/ 280.00</span>
-                        </div>
-                        <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
-                    </div>
-                </article>
-                
-                <!-- Producto 4 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="badge sale">Últimos</span>
-                        <img src="https://placehold.co/300x300/f8f9fa/333333?text=Zapatilla+Running" alt="Zapatilla Running">
+                        <span class="badge sale">-15%</span>
+                        <img src="https://placehold.co/300x300/f8f9fa/333333?text=Zapatilla+Running" alt="Running">
                     </div>
                     <div class="product-details">
                         <span class="product-brand">Adidas</span>
                         <h3 class="product-title">Ultra Boost Speed</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            <span>(89)</span>
-                        </div>
                         <div class="product-price">
                             <span class="current-price">S/ 190.00</span>
                             <span class="old-price">S/ 220.00</span>
                         </div>
-                        <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+                        <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Añadir</button>
+                    </div>
+                </article>
+                
+                 <article class="product-card" data-category="destacados">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/f8f9fa/333333?text=Botas+Trekking" alt="Botas">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-brand">Caterpillar</span>
+                        <h3 class="product-title">Explorer Mountain</h3>
+                        <div class="product-price"><span class="current-price">S/ 280.00</span></div>
+                        <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Añadir</button>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- =====================================
-             6. BANNER PROMOCIONAL
-        ====================================== -->
         <section id="ofertas" class="promo-banner">
             <div class="promo-content">
                 <h2>Gran Liquidación de Temporada</h2>
                 <p>Hasta un 50% de descuento en marcas seleccionadas. ¡No te quedes sin tu talla!</p>
                 <div class="countdown">
-                    <div class="time-box"><span>02</span> Días</div>
-                    <div class="time-box"><span>14</span> Horas</div>
-                    <div class="time-box"><span>45</span> Min</div>
+                    <div class="time-box"><span id="days">02</span> Días</div>
+                    <div class="time-box"><span id="hours">14</span> Horas</div>
+                    <div class="time-box"><span id="mins">45</span> Min</div>
+                    <div class="time-box"><span id="secs">00</span> Seg</div>
                 </div>
-                <button class="btn btn-primary">Ver Descuentos</button>
+                <button class="btn btn-primary">Ver Descuentos <i class="fas fa-tag"></i></button>
             </div>
         </section>
 
-        <!-- =====================================
-             7. SUSCRIPCIÓN NEWSLETTER
-        ====================================== -->
+        <section id="testimonios" class="testimonials-section">
+            <div class="section-title">
+                <h2>Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Excelente calidad y el envío fue rapidísimo. Las zapatillas llegaron en perfecto estado y son muy cómodas."</p>
+                    <h4>- Carlos M.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <p>"Me equivoqué de talla, pero el proceso de devolución fue muy sencillo y rápido. Atención al cliente de 10."</p>
+                    <h4>- Andrea S.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Los precios son increíbles comparados con otras tiendas. Aproveché la oferta de temporada, recomendadísimo."</p>
+                    <h4>- Luis F.</h4>
+                </div>
+            </div>
+        </section>
+
         <section class="newsletter-section">
             <div class="newsletter-box">
-                <h2>Obtén S/ 20.00 de descuento en tu primera compra</h2>
-                <p>Suscríbete a nuestro boletín para recibir ofertas exclusivas, novedades y consejos de estilo.</p>
+                <h2>Obtén S/ 20.00 de descuento</h2>
+                <p>Suscríbete a nuestro boletín para recibir ofertas exclusivas y novedades.</p>
                 <form class="newsletter-form">
-                    <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                    <input type="email" placeholder="Tu correo electrónico" required>
                     <button type="submit" class="btn btn-secondary">Suscribirme</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- =====================================
-         8. PIE DE PÁGINA (FOOTER)
-    ====================================== -->
     <footer id="contacto" class="footer">
-        <div class="footer-container">
-            <div class="footer-column brand-info">
-                <h2>Zapa<span>Nova</span></h2>
-                <p>Tu destino número uno para calzado de calidad, combinando las mejores marcas con precios imbatibles.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-column links">
-                <h3>Atención al Cliente</h3>
-                <ul>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Política de Devoluciones</a></li>
-                    <li><a href="#">Guía de Tallas</a></li>
-                    <li><a href="#">Rastrear mi pedido</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column links">
-                <h3>Nuestra Empresa</h3>
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Trabaja con nosotros</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column contact-info">
-                <h3>Contacto</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Av. Los Zapateros 123, Ciudad</p>
-                <p><i class="fas fa-phone"></i> +51 987 654 321</p>
-                <p><i class="fas fa-envelope"></i> ventas@zapanova.com</p>
-                <div class="payment-methods">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-paypal"></i>
-                </div>
-            </div>
-        </div>
-        
         <div class="footer-bottom">
             <p>&copy; 2024 ZapaNova. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-<!-- Script de interacciones -->
     <script src="script.js"></script>
 </body>
 </html>
