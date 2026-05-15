@@ -1,6 +1,4 @@
-/* =========================================
-   1. VARIABLES GLOBALES Y RESETEO
-========================================= */
+/*INICIO DE ESTILO DEL PROYECTO*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
@@ -49,9 +47,7 @@ img {
     display: block;
 }
 
-/* =========================================
-   2. UTILIDADES (BOTONES Y TÍTULOS)
-========================================= */
+/*UTILIDADES (BOTONES Y TÍTULOS) */
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -100,9 +96,7 @@ img {
     font-size: 1.1rem;
 }
 
-/* =========================================
-   3. CABECERA Y NAVEGACIÓN
-========================================= */
+/*CABECERA Y NAVEGACIÓN*/
 .header {
     position: fixed;
     top: 0;
@@ -207,9 +201,7 @@ img {
     border-radius: 50%;
 }
 
-/* =========================================
-   4. HERO SECTION (Sección Principal)
-========================================= */
+/* HERO SECTION (Sección Principal)*/
 main {
     padding-top: 115px;
 }
@@ -254,9 +246,7 @@ main {
     gap: 15px;
 }
 
-/* =========================================
-   4.5 SECCIÓN DE MARCAS
-========================================= */
+/*SECCIÓN DE MARCAS*/
 .brands-section {
     text-align: center;
     padding: 30px 20px;
@@ -286,9 +276,7 @@ main {
     opacity: 1;
 }
 
-/* =========================================
-   5. SECCIÓN DE BENEFICIOS
-========================================= */
+/* SECCIÓN DE BENEFICIOS*/
 .benefits-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -320,9 +308,7 @@ main {
     font-size: 0.85rem;
 }
 
-/* =========================================
-   6. CATEGORÍAS
-========================================= */
+/*CATEGORÍAS*/
 .categories-section {
     max-width: 1200px;
     margin: 80px auto;
@@ -380,9 +366,7 @@ main {
     color: var(--primary-color);
 }
 
-/* =========================================
-   7. PRODUCTOS Y PESTAÑAS
-========================================= */
+/*PRODUCTOS Y PESTAÑAS*/
 .products-section {
     max-width: 1200px;
     margin: 80px auto;
@@ -531,9 +515,7 @@ main {
     color: var(--white);
 }
 
-/* =========================================
-   8. BANNER PROMOCIONAL
-========================================= */
+/*BANNER PROMOCIONAL*/
 .promo-banner {
     background-color: var(--dark-color);
     color: var(--white);
@@ -578,9 +560,7 @@ main {
     color: var(--primary-color);
 }
 
-/* =========================================
-   9. TESTIMONIOS
-========================================= */
+/* TESTIMONIOS*/
 .testimonials-section {
     max-width: 1200px;
     margin: 80px auto;
@@ -617,9 +597,7 @@ main {
     font-weight: 700;
 }
 
-/* =========================================
-   10. BOLETÍN (NEWSLETTER)
-========================================= */
+/* BOLETÍN (NEWSLETTER) */
 .newsletter-section {
     max-width: 800px;
     margin: 0 auto 80px;
@@ -659,9 +637,7 @@ main {
     border-color: var(--dark-color);
 }
 
-/* =========================================
-   11. FOOTER (PIE DE PÁGINA)
-========================================= */
+/*  FOOTER (PIE DE PÁGINA)*/
 .footer {
     background-color: #1a1a1a;
     color: #fff;
@@ -753,9 +729,7 @@ main {
     font-size: 0.9rem;
 }
 
-/* =========================================
-   12. DISEÑO RESPONSIVO (MÓVILES Y TABLETS)
-========================================= */
+/*DISEÑO RESPONSIVO (MÓVILES Y TABLETS)*/
 @media (max-width: 992px) {
     .hero-section {
         grid-template-columns: 1fr;

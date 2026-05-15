@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cantidadCarrito++;
             if(contadorCarrito) contadorCarrito.textContent = cantidadCarrito;
 
-            // Efecto visual de confirmación en el botón
             const textoOriginal = this.innerHTML;
             this.innerHTML = '<i class="fas fa-check"></i> ¡Agregado!';
             this.style.backgroundColor = 'var(--success-color, #27ae60)'; 
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let tiempoRestante = (2 * 24 * 60 * 60) + (14 * 60 * 60) + (45 * 60); 
 
     function actualizarContador() {
-        if (tiempoRestante <= 0) return; // Detener si llega a cero
+        if (tiempoRestante <= 0) return; 
 
         const dias = Math.floor(tiempoRestante / (24 * 60 * 60));
         const horas = Math.floor((tiempoRestante % (24 * 60 * 60)) / (60 * 60));
@@ -87,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Cerrar menú móvil al hacer clic en un enlace
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -133,15 +131,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const category = card.getAttribute('data-category');
                 
                 if (filterValue === 'all' || filterValue === category) {
-                    // Restauramos a 'flex' porque así está diseñado tu product-card en CSS
                     card.style.display = 'flex'; 
                     
-                    // Pequeño truco para que la animación 'fadeIn' de tu CSS se reproduzca cada vez que filtras
                     card.style.animation = 'none';
-                    card.offsetHeight; /* Fuerza al navegador a recalcular */
+                    card.offsetHeight; 
                     card.style.animation = null; 
                 } else {
-                    // Ocultamos la tarjeta
                     card.style.display = 'none';
                 }
             });
